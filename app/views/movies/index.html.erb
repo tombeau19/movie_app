@@ -1,2 +1,9 @@
-<h1>Movies#index</h1>
-<p>Find me in app/views/movies/index.html.erb</p>
+<h1>Favorite Movies</h1>
+
+<% @movies.each do |movie| %>
+   <h3> <%= movie.title %> </h3>
+   <h3> <%= movie.release_year %> </h3>
+   <h4> <%= movie.rating %> </h4>
+   
+    <hr>
+<% end %>
